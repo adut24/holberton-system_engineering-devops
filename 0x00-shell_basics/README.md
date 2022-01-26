@@ -1,1 +1,1 @@
-The scrpt in this directory show you what directory you currently are in
+The script in this directory show you what directory you currently are in
