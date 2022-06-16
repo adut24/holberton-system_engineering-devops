@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Display time until 12:59
+hour=0
+minute=1
+while ((hour != 13))
+do
+	echo "Hour: $hour"
+	while ((minute != 60))
+	do
+		echo $minute
+		((minute++))
+	done
+	minute=1
+	((hour++))
+done
