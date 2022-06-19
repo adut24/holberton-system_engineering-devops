@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Parse Apache logs
+awk -F" " '{for (i = 2; i < 9; i++) $i=""; for (i = 10; i < NF; i++) $i=""; NF-=1; print}' apache-access.log |
+sort | uniq -c | sort -nr | tr -s ' '
