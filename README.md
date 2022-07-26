@@ -1,12 +1,18 @@
 # holberton-system_engineering-devops repository
-This repository contains four projects:
+This repository contains 11 projects:
 * 0x00. Shell, basics
 * 0x01. Shell, permissions
 * 0x02. Shell, I/O Redirections and filters
 * 0x03. Shell, init files, variables and expansions
+* 0x04. Loops, conditions and parsing
+* 0x05. Processes and signals
+* 0x06. Regular expression
+* 0x07. Networking basics #0
+* 0x08. Networking basics #1
+* 0x09. Web infrastructure design
+* Command line for the win (optional)
 
 ## Learning Objectives
-
 ### 0x00. Shell, basics
 * What do the commands or built-ins `cd`, `pwd`, `ls` do
 * How to navigate the filesystem
@@ -72,3 +78,61 @@ and how to use them properly
 * How to list aliases
 * How to temporarily disable an alias
 * How to execute commands from a file in the current shell
+
+### 0x04. Loops, conditions and parsing
+* How to create SSH keys
+* What is the advantage of using `#!/usr/bin/env bash` over `#!/bin/bash`
+* How to use `while`, `until` and `for` loops
+* How to use `if`, `else`, `elif` and `case` condition statements
+* How to use the `cut` command
+* What are files and other comparison operators, and how to use them
+
+### 0x05. Processes and signals
+* What is a PID
+* What is a process
+* How to find a process’ PID
+* How to kill a process
+* What is a signal
+* What are the 2 signals that cannot be ignored
+
+### 0x06. Regular expression
+* None.
+
+### 0x07. Networking basics #0
+* **OSI Model**
+	* What it is
+	* How many layers it has
+	* How it is organized
+* **What is a LAN**
+	* Typical usage
+	* Typical geographical size
+* **What is a WAN**
+	* Typical usage
+	* Typical geographical size
+* **What is the Internet**
+	* What is an IP address
+	* What are the 2 types of IP address
+	* What is `localhost`
+	* What is a subnet
+	* Why IPv6 was created
+* **TCP/UDP**
+	* What are the 2 mainly used data transfer protocols for IP (transfer level on the OSI schema)
+	* What is the main difference between TCP and UDP
+	* What is a port
+	* Memorize SSH, HTTP and HTTPS port numbers
+	* What tool/protocol is often used to check if a device is connected to a network
+
+### 0x08. Networking basics #1
+* What is localhost/127.0.0.1
+* What is 0.0.0.0
+* What is `/etc/hosts`
+* How to display your machine’s active network interfaces
+
+### 0x09. Web infrastructure design
+* You must be able to draw a diagram covering the web stack you built with the sysadmin/devops track projects
+* You must be able to explain what each component is doing
+* You must be able to explain system redundancy
+* Know all the mentioned acronyms: LAMP, SPOF, QPS
+
+### Command line for the win
+* None.
