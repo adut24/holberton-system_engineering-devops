@@ -1,6 +1,8 @@
 # Install and configure Nginx
 package {'nginx':
+  ensure          => 'installed',
   install_options => '-y',
+  provider        => 'apt',
 }
 
 file {'Configure the home page':
