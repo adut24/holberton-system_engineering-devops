@@ -6,7 +6,7 @@ package {'nginx':
 file {'Configure the home page':
   ensure    => 'present',
   path      => '/var/www/html/index.nginx-debian.html',
-  content   => 'Hellow World'
+  content   => 'Hellow World\n'
 }
 
 file_line {'Redirection':
