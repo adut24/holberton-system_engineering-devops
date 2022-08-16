@@ -1,14 +1,13 @@
 # Install and configure Nginx
 package {'nginx':
-  ensure          => 'installed',
-  install_options => '-y',
-  provider        => 'apt',
+  ensure   => 'installed',
+  provider => 'apt',
 }
 
 file {'Configure the home page':
   ensure    => 'present',
   path      => '/var/www/html/index.nginx-debian.html',
-  content   => 'Hellow World\n'
+  content   => 'Hello World\n'
 }
 
 file_line {'Redirection':
