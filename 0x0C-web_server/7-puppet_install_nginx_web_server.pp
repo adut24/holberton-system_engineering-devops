@@ -14,3 +14,8 @@ file_line {'Redirection':
   after => 'server_name _;',
   line  => 'location /redirect_me { rewrite ^ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent; }',
 }
+
+service { 'nginx':
+  ensure  => 'running',
+  require => Package['nginx'],
+}
