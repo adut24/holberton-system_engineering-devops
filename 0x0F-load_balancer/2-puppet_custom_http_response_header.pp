@@ -1,4 +1,9 @@
 # Install and configure Nginx
+exec { 'update':
+  command => 'apt update',
+  path    => '/usr/bin/',
+}
+
 package {'nginx':
   ensure   => 'installed',
   provider => 'apt',
@@ -21,6 +26,7 @@ file_line {'Redirection':
   path   => '/etc/nginx/sites-available/default',
   after  => 'server_name _;',
   line   => 'location /redirect_me { rewrite ^ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent; }',
+  require => Package['nginx'],
 }
 
 file_line {'error page':
@@ -28,6 +34,7 @@ file_line {'error page':
   path   => '/etc/nginx/sites-available/default',
   after  => 'server_name _;',
   line   => 'error_page 404 /404.html;',
+  require => Package['nginx'],
 }
 
 file_line {'error page redirection':
@@ -35,6 +42,7 @@ file_line {'error page redirection':
   path   => '/etc/nginx/sites-available/default',
   after  => 'error_page 404 /404.html;',
   line   => 'location /404 { root /var/www/html; internal; }',
+  require => Package['nginx'],
 }
 
 file_line {'Custom header':
@@ -42,6 +50,7 @@ file_line {'Custom header':
   path   => '/etc/nginx/sites-available/default',
   after  => 'server_name _;',
   line   => 'add_header X-Served-By $hostname;',
+  require => Package['nginx'],
 }
 
 service { 'nginx':
