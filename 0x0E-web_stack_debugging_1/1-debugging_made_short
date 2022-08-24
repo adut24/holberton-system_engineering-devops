@@ -2,4 +2,4 @@
 # Debug the sandbox made shorter
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 service nginx restart
-pkill -9 nginx
+kill -9 "$(cat /var/run/nginx.pid)"
