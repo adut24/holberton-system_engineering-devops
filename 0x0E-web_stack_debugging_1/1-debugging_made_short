@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Debug the sandbox made shorter
-rm /etc/nginx/sites-enabled/default
-ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 service nginx restart
+pkill -9 nginx
