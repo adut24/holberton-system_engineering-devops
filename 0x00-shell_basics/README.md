@@ -57,3 +57,6 @@ Create a tree of directory in the current one. "school" is inside "to" which is 
 
 ## [103-commas](./103-commas)
 Show all the content of the current directory separated with commas and with "/" after the directory names.
+
+## [school.mgc](./school.mgc)
+Create a magic file "school.mgc" that can be used with the command "file" to detect "School" data files. "School" data files always contain the string "SCHOOL" at offset 0.
