@@ -1,5 +1,5 @@
 # holberton-system_engineering-devops repository
-This repository contains 12 projects:
+This repository contains 18 projects:
 * [0x00. Shell, basics](./0x00-shell_basics/)
 * [0x01. Shell, permissions](./0x01-shell_permissions/)
 * [0x02. Shell, I/O Redirections and filters](./0x02-shell_redirections/)
@@ -11,6 +11,12 @@ This repository contains 12 projects:
 * [0x08. Networking basics #1](./0x08-networking_basics_2/)
 * [0x09. Web infrastructure design](./0x09-web_infrastructure_design/)
 * [0x0A. Configuration management](./0x0A-configuration_management/)
+* [0x0B. SSH](./0x0B-ssh/)
+* [0x0C. Web server](./0x0C-web_server/)
+* [0x0D. Web stack debugging #0](./0x0D-web_stack_debugging_0/)
+* [0x0E. Web stack debugging #1](./0x0E-web_stack_debugging_1/)
+* [0x0F. Load balancer](./0x0F-load_balancer/)
+* [0x10. HTTPS SSL](./0x10-https_ssl/)
 * [Command line for the win](./command_line_for_the_win/) (optional)
 
 ## Learning Objectives
@@ -137,6 +143,36 @@ and how to use them properly
 
 ### [0x0A. Configuration management](./0x0A-configuration_management/)
 * None
+
+### [0x0B. SSH](./0x0B-ssh/)
+- What is a server
+- Where servers usually live
+- What is SSH
+- How to create an SSH RSA key pair
+- How to connect to a remote host using an SSH RSA key pair
+- The advantage of using `#!/usr/bin/env bash` instead of `/bin/bash`
+
+### [0x0C. Web server](./0x0C-web_server/)
+- What is the main role of a web server
+- What is a child process
+- Why web servers usually have a parent process and child processes
+- What are the main HTTP requests
+- What DNS stands for
+- What is DNS main role
+
+### [0x0D. Web stack debugging #0](./0x0D-web_stack_debugging_0/)
+- None
+
+### [0x0E. Web stack debugging #1](./0x0E-web_stack_debugging_1/)
+- None
+
+### [0x0F. Load balancer](./0x0F-load_balancer/)
+- None
+
+### [0x10. HTTPS SSL](./0x10-https_ssl/)
+- What is HTTPS SSL 2 main roles
+- What is the purpose encrypting traffic
+- What SSL termination means
 
 ### [Command line for the win](./command_line_for_the_win/)
 * None
