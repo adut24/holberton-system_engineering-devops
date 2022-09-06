@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Dump all databases and create an archive
 FILENAME=$(date +%d-%m-%Y)
-mysqldump -uroot -p "$1" --all-databases --single-transaction --triggers --routines > backup.sql
-tar -cvzf "$FILENAME".tar.gz backup.sql
+mysqldump -uroot -p "$1" --all-databases > backup.sql
+tar -cvzf "$FILENAME.tar.gz" backup.sql
