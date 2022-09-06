@@ -4,4 +4,4 @@ pkill -9 apache2
 sed -i '/#user www-data;/a user nginx;' /etc/nginx/nginx.conf
 sed -i 's/listen 80/listen 8080/g' /etc/nginx/sites-available/default
 sed -i 's/listen [::]:80 default_server ipv6only=on/listen [::]:8080 default_server ipv6only=on/g' /etc/nginx/sites-available/default
-sudo -i -u nginx service nginx restart
+su -c 'service nginx start' nginx
