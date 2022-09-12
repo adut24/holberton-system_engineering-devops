@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Gather data using the REST API"""
+"""Export data to a CSV file"""
 import requests
 from sys import argv
 
