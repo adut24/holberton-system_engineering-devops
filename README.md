@@ -1,5 +1,5 @@
 # holberton-system_engineering-devops repository
-This repository contains 21 projects:
+This repository contains 22 projects:
 - [0x00. Shell, basics](./0x00-shell_basics/)
 - [0x01. Shell, permissions](./0x01-shell_permissions/)
 - [0x02. Shell, I/O Redirections and filters](./0x02-shell_redirections/)
@@ -20,6 +20,7 @@ This repository contains 21 projects:
 - [0x12. Web stack debugging #2](./0x12-web_stack_debugging_2/)
 - [0x13. Firewall](./0x13-firewall/)
 - [0x14. MySQL](./0x14-mysql/)
+- [0x15. API](./0x15-api/)
 - [Command line for the win](./command_line_for_the_win/) (optional)
 
 ## Learning Objectives
@@ -189,6 +190,19 @@ and how to use them properly
 - What is the purpose of a database replica
 - Why database backups need to be stored in different physical locations
 - What operation should you regularly perform to make sure that your database backup strategy actually works
+
+### [0x15. API](./0x15-api/)
+- What is an API
+- What is a REST API
+- What are microservices
+- What is the CSV format
+- What is the JSON format
+- Pythonic Package and module name style
+- Pythonic Class name style
+- Pythonic Variable name style
+- Pythonic Function name style
+- Pythonic Constant name style
+- Significance of CapWords or CamelCase in Python
 
 ### [Command line for the win](./command_line_for_the_win/)
 - None
