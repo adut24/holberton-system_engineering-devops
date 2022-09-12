@@ -18,4 +18,4 @@ if __name__ == '__main__':
     print('Employee {} is done with tasks({}/{}):'
           .format(r.get('name'), complete, len(todos)))
     for task in complete_list:
-        print('\t{}'.format(task))
+        print('\t {}'.format(task))
