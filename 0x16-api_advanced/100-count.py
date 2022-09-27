@@ -10,7 +10,7 @@ def count_words(subreddit, word_list, after='', count={}):
             if word.casefold() not in count.keys():
                 count[word.casefold()] = 0
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
-    if after != '':
+    if after != '' or after is not None:
         url += '?after={}'.format(after)
     user = {'User-Agent': 'Test123'}
     response = requests.get(url, headers=user, allow_redirects=False)
