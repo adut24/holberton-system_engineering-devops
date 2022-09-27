@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""""""
+"""List all title in hot"""
 import requests
 
 
 def recurse(subreddit, hot_list=[], after=''):
-    """"""
+    """List all title in hot"""
     url = f'https://www.reddit.com/r/{subreddit}/hot.json?after={after}'
     user = {'User-Agent': 'Test123'}
     response = requests.get(url, headers=user, allow_redirects=False)
