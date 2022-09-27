@@ -14,7 +14,7 @@ def count_words(subreddit, word_list, after='', count={}):
         url += '?after={}'.format(after)
     user = {'User-Agent': 'Test123'}
     response = requests.get(url, headers=user, allow_redirects=False)
-    if not response.ok:
+    if not response.ok or response.status_code == 302:
         return None
     data = response.json().get('data')
     after = data.get('after')
@@ -27,4 +27,4 @@ def count_words(subreddit, word_list, after='', count={}):
             if v != 0:
                 print('{:s}: {:d}'.format(k, v))
         return
-    return count_words(subreddit, word_list, after, count)
+    count_words(subreddit, word_list, after, count)
