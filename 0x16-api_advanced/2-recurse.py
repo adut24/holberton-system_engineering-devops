@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""List all title in hot"""
+"""List all title in hot using the reddit API"""
 import requests
 
 
 def recurse(subreddit, hot_list=[], after=''):
-    """List all title in hot"""
+    """List all title in hot of a subreddit"""
     url = f'https://www.reddit.com/r/{subreddit}/hot.json'
     if len(after) > 0:
         url += f'?after={after}'
