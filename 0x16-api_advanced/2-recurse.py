@@ -5,7 +5,9 @@ import requests
 
 def recurse(subreddit, hot_list=[], after=''):
     """List all title in hot"""
-    url = f'https://www.reddit.com/r/{subreddit}/hot.json?after={after}'
+    url = f'https://www.reddit.com/r/{subreddit}/hot.json'
+    if len(after) > 0:
+        url += f'?after={after}'
     user = {'User-Agent': 'Test123'}
     response = requests.get(url, headers=user, allow_redirects=False)
     if not response.ok:
