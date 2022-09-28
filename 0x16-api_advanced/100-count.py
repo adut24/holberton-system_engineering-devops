@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Count the occurences of word in title"""
-import operator
 import requests
 
 
@@ -24,8 +23,8 @@ def count_words(subreddit, word_list, after='', count={}):
                     else:
                         count[word] += 1
     if after is None:
-        sorted_count = dict(sorted(count.items(), key=operator.itemgetter(1),
-                                   reverse=True))
+        sorted_count = dict(sorted(count.items(),
+                                   key=lambda x: (-x[1], x[0])))
         for k, v in sorted_count.items():
             if v > 0:
                 print('{}: {}'.format(k, v))
