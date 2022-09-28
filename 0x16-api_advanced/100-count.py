@@ -19,9 +19,9 @@ def count_words(subreddit, word_list, after='', count={}):
     data = response.json().get('data')
     after = data.get('after')
     for post in data.get('children'):
-        for word in post.get('data').get('title').casefold().split():
+        for word in post.get('data').get('title').split():
             for keyword in count.keys():
-                if keyword.casefold() == word:
+                if keyword.casefold() == word.casefold():
                     count[word] += 1
     if after is None:
         sorted_count = dict(sorted(count.items(), key=operator.itemgetter(1),
