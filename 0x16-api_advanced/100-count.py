@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """Count the occurences of word in title"""
+import operator
 import requests
 
 
 def count_words(subreddit, word_list, after='', count={}):
     """Check the how recurring a list of words are in subreddit title"""
     if count == {}:
-        for word in sorted(word_list):
-            if word.casefold() not in count.keys():
-                count[word.casefold()] = 0
+        for word in word_list:
+            count[word] = 0
     url = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
     if after != '':
         url += '?after={}'.format(after)
@@ -20,10 +20,13 @@ def count_words(subreddit, word_list, after='', count={}):
     after = data.get('after')
     for post in data.get('children'):
         for word in post.get('data').get('title').casefold().split():
-            if word in count.keys():
-                count[word] += 1
+            for keyword in count.keys():
+                if keyword.casefold() == word:
+                    count[word] += 1
     if after is None:
-        for k, v in count.items():
+        sorted_count = dict(sorted(count.items(), key=operator.itemgetter(1),
+                                   reverse=True))
+        for k, v in sorted_count.items():
             if v > 0:
                 print('{}: {}'.format(k, v))
         return
