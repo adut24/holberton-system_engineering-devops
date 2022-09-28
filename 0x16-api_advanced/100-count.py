@@ -22,7 +22,7 @@ def count_words(subreddit, word_list, after='', count={}):
         for word in post.get('data').get('title').split():
             for keyword in count.keys():
                 if keyword.casefold() == word.casefold():
-                    count[word] += 1
+                    count[keyword] += 1
     if after is None:
         sorted_count = dict(sorted(count.items(), key=operator.itemgetter(1),
                                    reverse=True))
