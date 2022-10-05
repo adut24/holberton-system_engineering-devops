@@ -58,11 +58,15 @@ server {
 	}
 
 	location /static {
-		root /AirBnB_clone_v4/web_dynamic/;
+		root /home/ubuntu/AirBnB_clone_v4/web_dynamic/;
 	}
 
 	location / {
 		proxy_pass http://127.0.0.1:5003/2-hbnb;
+	}
+
+	location /2-hbnb {
+		proxy_pass http://127.0.0.1:5003;
 	}
 
 	location /hbnb_static {
