@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 # Restart Gunicorn gracefully
-pkill -9 gunicorn
-sudo service gunicorn restart
+pkill -HUP gunicorn
