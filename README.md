@@ -22,6 +22,10 @@ This repository contains 22 projects:
 - [0x14. MySQL](./0x14-mysql/)
 - [0x15. API](./0x15-api/)
 - [0x16. API advanced](./0x16-api_advanced/)
+- [0x17. Web stack debugging #3](./0x17-web_stack_debugging_3/)
+- [0x18. Webstack monitoring](./0x18-webstack_monitoring/)
+- [0x19. Postmortem](./0x19-postmortem/)
+- [0x1A. Application server](./0x1A-application_server/)
 - [Command line for the win](./command_line_for_the_win/) (optional)
 
 ## Learning Objectives
@@ -205,12 +209,27 @@ and how to use them properly
 - Pythonic Constant name style
 - Significance of CapWords or CamelCase in Python
 
-## [0x16. API advanced](./0x16-api_advanced/)
+### [0x16. API advanced](./0x16-api_advanced/)
 - How to read API documentation to find the endpoints you’re looking for
 - How to use an API with pagination
 - How to parse JSON results from an API
 - How to make a recursive API call
 - How to sort a dictionary by value
 
+### [0x17. Web stack debugging #3](./0x17-web_stack_debugging_3/)
+- None.
+
+### [0x18. Webstack monitoring](./0x18-webstack_monitoring/)
+- Why is monitoring needed
+- What are the 2 main area of monitoring
+- What are access logs for a web server (such as Nginx)
+- What are error logs for a web server (such as Nginx)
+
+### [0x19. Postmortem](./0x19-postmortem/)
+- None.
+
+### [0x1A. Application server](./0x1A-application_server/)
+- None.
+
 ### [Command line for the win](./command_line_for_the_win/)
-- None
+- None.
