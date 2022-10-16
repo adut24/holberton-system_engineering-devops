@@ -21,6 +21,7 @@ This repository contains 22 projects:
 - [0x13. Firewall](./0x13-firewall/)
 - [0x14. MySQL](./0x14-mysql/)
 - [0x15. API](./0x15-api/)
+- [0x16. API advanced](./0x16-api_advanced/)
 - [Command line for the win](./command_line_for_the_win/) (optional)
 
 ## Learning Objectives
@@ -203,6 +204,13 @@ and how to use them properly
 - Pythonic Function name style
 - Pythonic Constant name style
 - Significance of CapWords or CamelCase in Python
+
+## [0x16. API advanced](./0x16-api_advanced/)
+- How to read API documentation to find the endpoints you’re looking for
+- How to use an API with pagination
+- How to parse JSON results from an API
+- How to make a recursive API call
+- How to sort a dictionary by value
 
 ### [Command line for the win](./command_line_for_the_win/)
 - None
