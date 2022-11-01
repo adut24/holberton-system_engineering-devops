@@ -1,5 +1,5 @@
 # holberton-system_engineering-devops repository
-This repository contains 22 projects:
+This repository contains 28 projects:
 - [0x00. Shell, basics](./0x00-shell_basics/)
 - [0x01. Shell, permissions](./0x01-shell_permissions/)
 - [0x02. Shell, I/O Redirections and filters](./0x02-shell_redirections/)
@@ -26,6 +26,7 @@ This repository contains 22 projects:
 - [0x18. Webstack monitoring](./0x18-webstack_monitoring/)
 - [0x19. Postmortem](./0x19-postmortem/)
 - [0x1A. Application server](./0x1A-application_server/)
+- [0x1B. Web stack debugging #4](./0x1B-web_stack_debugging_4/)
 - [Command line for the win](./command_line_for_the_win/) (optional)
 
 ## Learning Objectives
@@ -217,7 +218,7 @@ and how to use them properly
 - How to sort a dictionary by value
 
 ### [0x17. Web stack debugging #3](./0x17-web_stack_debugging_3/)
-- None.
+- None
 
 ### [0x18. Webstack monitoring](./0x18-webstack_monitoring/)
 - Why is monitoring needed
@@ -226,10 +227,13 @@ and how to use them properly
 - What are error logs for a web server (such as Nginx)
 
 ### [0x19. Postmortem](./0x19-postmortem/)
-- None.
+- None
 
 ### [0x1A. Application server](./0x1A-application_server/)
-- None.
+- None
+
+### [0x1B. Web stack debugging #4](./0x1B-web_stack_debugging_4/)
+- None
 
 ### [Command line for the win](./command_line_for_the_win/)
-- None.
+- None
